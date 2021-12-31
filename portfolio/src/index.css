@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap");
+body {
+  margin: 0;
+  font-family: Rajdhani, "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  background: #ffffff;
+  height: 100vh;
+}
+
+.header {
+  margin: 0;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.section {
+  padding: 20px;
+}
+
+.section-intro {
+  height: 350px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.blurb {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.blurb-details {
+  max-width: 50%;
+  max-height: 500px;
+  float: left;
+}
+
+.blurb-image {
+  max-width: 45%;
+  max-height: 500px;
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.intro-title {
+  padding-left: 20px;
+}
+
+.social-links {
+  padding-left: 20px;
+}
+
+.social-link {
+  padding-right: 20px;
+}
+
+.blurb-text {
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
