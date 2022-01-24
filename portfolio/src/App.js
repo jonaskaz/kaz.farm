@@ -1,5 +1,6 @@
 import Section from "./components/Section";
 import Intro from "./components/Intro";
+import Menu from "./components/StickyMenu";
 
 function App() {
   return (
@@ -7,9 +8,9 @@ function App() {
       <Intro
         color="#c0d6df"
         name="Jonas Kazlauskas"
-        title="Web3 Engineer, Student @ Olin College of Engineering"
-        linkedin={"test"}
-        github={"test"}
+        title="Software Engineer, Student @ Olin College of Engineering"
+        linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
+        github={"https://github.com/jonaskaz"}
       />
       <Section
         color="#fafafa"
@@ -68,15 +69,16 @@ function App() {
       />
       <Section
         color="#fafafa"
-        image={require("./images/react-logo.png")}
+        image={require("./images/hydro-harvest-1.jpg")}
         title="Hydroponics automation controller"
-        description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects. Notes on deployment."
+        link="https://github.com/Olin-Hydro/circadia"
+        description="Built an arduino program using C++ and PlatformIO to take sensor readings and schedule dispensing nutrients. Data is sent to and settings are pulled from our data api."
       />
       <Section
-        color="#fafafa"
+        color="#ece4db"
         image={require("./images/react-logo.png")}
         title="This website"
-        description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects. Notes on deployment."
+        description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects."
       />
     </div>
   );

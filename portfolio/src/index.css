@@ -54,16 +54,34 @@ code {
 
 .intro-title {
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .social-links {
   padding-left: 20px;
 }
 
-.social-link {
-  padding-right: 20px;
+.social-links a {
+  padding-right: 5px;
 }
 
+.menu-item {
+  padding: 10px;
+  color: #03071e;
+}
+
+.menu {
+  background-color: #81b29a;
+}
+
+.aws-btn-wrapper {
+  padding-right: 5px;
+}
+
+:root {
+  --button-raise-level: 5px;
+  --button-default-height: 200px;
+}
 .blurb-text {
 }
 
