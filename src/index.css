@@ -63,6 +63,7 @@ code {
 
 .social-links a {
   padding-right: 5px;
+  margin-bottom: 15px;
 }
 
 .menu-item {
@@ -88,4 +89,22 @@ code {
 .flex-container {
   display: flex;
   flex-direction: row;
+}
+
+.skills {
+  padding-left: 20px;
+  max-width: 50%;
+}
+
+.skill {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: groove;
+  border-color: #000000;
+  padding-left: 4px;
+  padding-right: 4px;
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
+  background-color: #fad8ff;
+  margin-right: 5px;
+  font-size: 15px;
 }

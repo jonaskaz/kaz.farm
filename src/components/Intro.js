@@ -1,8 +1,9 @@
 import SocialLinks from "./SocialLinks";
 import Header from "./Header";
+import Skills from "./Skills";
 
 
-const Intro = ({ color, name, title, linkedin, github }) => {
+const Intro = ({ color, name, title, linkedin, github}) => {
   return (
     <div className="section-intro" style={{ backgroundColor: color }}>
       <Header text={name} />

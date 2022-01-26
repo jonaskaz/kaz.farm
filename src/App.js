@@ -23,6 +23,7 @@ function App() {
             logs, sensor readings and smart contract data.
           </div>
         }
+        skills={["Python", "flask", "AWS", "web3", "flask-restx", "SQLalchemy"]}
       />
       <Section
         color="#eaeaea"
@@ -35,6 +36,7 @@ function App() {
             community control of our garden using Brownie and Solidity
           </div>
         }
+        skills={["Solidity", "Brownie", "Python", "Ganache"]}
       />
       <Section
         color="#fafafa"
@@ -59,6 +61,15 @@ function App() {
             </ul>
           </div>
         }
+        skills={[
+          "C++",
+          "PlatformIO",
+          "Python",
+          "FastAPI",
+          "ESPAsyncWebServer",
+          "AccelStepper",
+          "ArduinoJson",
+        ]}
       />
       <Section
         color="#e8dab2"
@@ -66,19 +77,22 @@ function App() {
         link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
         title="Python reinforcement Q-learning and evolutionary algorithms"
         description="In this project, we created two numpy implementations of simple evolutionary algorithms. Next, we implemented Q-learning to solve two of OpenAI's GYM library environments."
+        skills={["Python", "numpy", "matplotlib", "gym"]}
       />
       <Section
         color="#fafafa"
         image={require("./images/hydro-harvest-1.jpg")}
         title="Hydroponics automation controller"
         link="https://github.com/Olin-Hydro/circadia"
-        description="Built an arduino program using C++ and PlatformIO to take sensor readings and schedule dispensing nutrients. Data is sent to and settings are pulled from our data api."
+        description="Built an arduino program using C++ and PlatformIO to take sensor readings and schedule dispensing nutrients. Data is sent to a raspberry pi via serial which handles making calls to our Hydro API using Python."
+        skills={["C++", "Arduino", "Serial", "Python"]}
       />
       <Section
         color="#ece4db"
         image={require("./images/react-logo.png")}
         title="This website"
         description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects."
+        skills={["React", "Javascript", "CSS", "HTML", "Heroku"]}
       />
     </div>
   );

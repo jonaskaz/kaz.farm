@@ -1,4 +1,3 @@
-
 const Blurb = ({ title, text, image }) => {
   return (
     <div className="blurb">
