@@ -1,20 +1,27 @@
-import Section from "./components/Section";
-import Intro from "./components/Intro";
-import Menu from "./components/StickyMenu";
+import Section from "../components/Section";
+import Intro from "../components/Intro";
+import StickyMenu from "../components/StickyMenu";
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <Intro
-        color="#c0d6df"
+        color="#efc3e6" //"#c0d6df"
         name="Jonas Kazlauskas"
         title="Software Engineer, Student @ Olin College of Engineering"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
         github={"https://github.com/jonaskaz"}
       />
+      <StickyMenu
+        items={[
+          { text: "Home", href: "/" },
+          { text: "Resume", href: "/resume" },
+          { text: "Gallery", href: "/gallery" },
+        ]}
+      />
       <Section
         color="#fafafa"
-        image={require("./images/hydro-api.png")}
+        image={require("../images/hydro-api.png")}
         title="Python Flask RESTx data API"
         link="https://github.com/Olin-Hydro/hydro-api"
         description={
@@ -27,7 +34,7 @@ function App() {
       />
       <Section
         color="#eaeaea"
-        image={require("./images/hydro-web3.png")}
+        image={require("../images/hydro-web3.png")}
         title="Blockchain based community garden control"
         link="https://github.com/Olin-Hydro/mycelium"
         description={
@@ -40,7 +47,7 @@ function App() {
       />
       <Section
         color="#fafafa"
-        image={require("./images/cup-noodle-system.png")}
+        image={require("../images/cup-noodle-system.png")}
         title="Fullstack cup noodle vending machine"
         link="https://olincollege.github.io/pie-2021-03/Cup-Noodle/firmware.html"
         description={
@@ -73,7 +80,7 @@ function App() {
       />
       <Section
         color="#e8dab2"
-        image={require("./images/evo-algo-1.png")}
+        image={require("../images/evo-algo-1.png")}
         link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
         title="Python reinforcement Q-learning and evolutionary algorithms"
         description="In this project, we created two numpy implementations of simple evolutionary algorithms. Next, we implemented Q-learning to solve two of OpenAI's GYM library environments."
@@ -81,7 +88,7 @@ function App() {
       />
       <Section
         color="#fafafa"
-        image={require("./images/hydro-harvest-1.jpg")}
+        image={require("../images/hydro-harvest-1.jpg")}
         title="Hydroponics automation controller"
         link="https://github.com/Olin-Hydro/circadia"
         description="Built an arduino program using C++ and PlatformIO to take sensor readings and schedule dispensing nutrients. Data is sent to a raspberry pi via serial which handles making calls to our Hydro API using Python."
@@ -89,7 +96,7 @@ function App() {
       />
       <Section
         color="#ece4db"
-        image={require("./images/react-logo.png")}
+        image={require("../images/react-logo.png")}
         title="This website"
         description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects."
         skills={["React", "Javascript", "CSS", "HTML", "Heroku"]}
@@ -98,4 +105,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

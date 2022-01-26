@@ -13,6 +13,7 @@ const Intro = ({ color, name, title, linkedin, github}) => {
       </div>
       <SocialLinks linkedin={linkedin} github={github} />
     </div>
+    
   );
 };
 

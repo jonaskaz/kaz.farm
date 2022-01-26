@@ -28,10 +28,12 @@ code {
 }
 
 .section-intro {
-  height: 350px;
+  height: 300px;
   margin: 0;
   padding-left: 20px;
 }
+
+
 
 .blurb {
   margin: 0;
@@ -63,16 +65,7 @@ code {
 
 .social-links a {
   padding-right: 5px;
-  margin-bottom: 15px;
-}
-
-.menu-item {
-  padding: 10px;
-  color: #03071e;
-}
-
-.menu {
-  background-color: #81b29a;
+  margin-bottom: 5px;
 }
 
 .aws-btn-wrapper {
@@ -103,8 +96,54 @@ code {
   border-color: #000000;
   padding-left: 4px;
   padding-right: 4px;
-  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
-  background-color: #fad8ff;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  background-color: #e0e0e0;
   margin-right: 5px;
   font-size: 15px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+}
+
+.sticky-wrapper {
+  position: relative;
+  height: 3rem; /* We need to change this value */
+  top: 0;
+}
+
+.sticky-inner {
+  background-color: #efc3e6;
+  margin: 0;
+  width: 100%;
+  height: 3.5rem;
+  padding-left: 35px;
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 20px;
+  
+}
+
+.menu-item a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration: none;
+  text-decoration: none;
+  text-decoration: none;
 }
