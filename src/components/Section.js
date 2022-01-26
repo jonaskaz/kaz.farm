@@ -18,10 +18,10 @@ const Section = ({
         {headerText && <Header text={headerText} />}
         <Blurb title={title} image={image} text={description} />
       </div>
-
       <Skills skills={skills} />
-      <a href={link}>
-        <AiOutlineLink style={{ padding: "20px" }} color="black" size={20} />
+      <div className="outlink-buffer"></div>
+      <a style={{ padding: "20px" }} href={link}>
+        <AiOutlineLink color="black" size={20} />
       </a>
     </div>
   );

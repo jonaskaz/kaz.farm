@@ -1,8 +1,12 @@
 import PropTypes from "prop-types";
 
 const Skills = ({ skills }) => {
-  var output = skills.map(skill => <span key={skill} className="skill">{skill}</span>)
-  return <div className="skills">{output}</div>
+  var output = skills.map((skill) => (
+    <div key={skill} className="skill">
+      {skill}
+    </div>
+  ));
+  return <div className="flex-container skills">{output}</div>;
 };
 
 Skills.propTypes = {
