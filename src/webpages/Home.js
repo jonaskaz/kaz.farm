@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="App">
       <Intro
-        color="#efc3e6" //"#c0d6df"
+        color="#efc3e6"
         name="Jonas Kazlauskas"
         title="Software Engineer, Student @ Olin College of Engineering"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
@@ -20,6 +20,40 @@ function Home() {
         ]}
       />
       <Section
+        color="#eaeaea"
+        image={require("../images/taproot.png")}
+        title="Javascript GraphQL Hydroponics Data API"
+        link="https://github.com/Olin-Hydro/taproot"
+        description={
+          <div>
+            Designed and deployed a NodeJS GraphQL Data API on AWS to serve and
+            store all our tasks logs, sensor readings, and system parameters.
+          </div>
+        }
+        skills={["Javascript", "Node", "AWS", "GraphQL", "MySQL"]}
+      />
+      <Section
+        color="#fafafa"
+        image={require("../images/hydro-harvest-1.jpg")}
+        title="Hydroponics automation controller"
+        link="https://github.com/Olin-Hydro/circadia"
+        description='Built an arduino program using C++ and PlatformIO to take sensor
+         readings and schedule dispensing nutrients. Data is sent to a raspberry pi 
+         via serial which handles making calls to our API. Pictured on the right is
+         a head of lettuce harvested from our garden.'
+        skills={["C++", "Arduino", "Serial", "PlatformIO", "OOP"]}
+      />
+      <Section
+        color="#e8dab2"
+        image={require("../images/hydro-system.jpg")}
+        title="Raspberry Pi Python API Request Translator"
+        link="https://github.com/Olin-Hydro/xylem"
+        description="Created a translator to read serial data from Circadia and 
+          make GraphQL API requests to store sensor data and retrieve system parameters.
+          Shown in the right is the full automation system diagram."
+        skills={["Python", "PySerial", "GraphQL", "Requests"]}
+      />
+      <Section
         color="#fafafa"
         image={require("../images/hydro-api.png")}
         title="Python Flask RESTx data API"
@@ -27,7 +61,8 @@ function Home() {
         description={
           <div>
             Designed and deployed a Python REST Data API on AWS to serve all our
-            logs, sensor readings and smart contract data.
+            logs, sensor readings and smart contract data. This was our version 1
+            API that was eventually replaced with our current GraphQL implementation.
           </div>
         }
         skills={["Python", "flask", "AWS", "web3", "flask-restx", "SQLalchemy"]}
@@ -40,7 +75,7 @@ function Home() {
         description={
           <div>
             Created and deployed a smart contract to lay the groundwork for
-            community control of our garden using Brownie and Solidity
+            community control of our garden using Brownie and Solidity.
           </div>
         }
         skills={["Solidity", "Brownie", "Python", "Ganache"]}
@@ -87,16 +122,9 @@ function Home() {
         skills={["Python", "numpy", "matplotlib", "gym"]}
       />
       <Section
-        color="#fafafa"
-        image={require("../images/hydro-harvest-1.jpg")}
-        title="Hydroponics automation controller"
-        link="https://github.com/Olin-Hydro/circadia"
-        description="Built an arduino program using C++ and PlatformIO to take sensor readings and schedule dispensing nutrients. Data is sent to a raspberry pi via serial which handles making calls to our Hydro API using Python."
-        skills={["C++", "Arduino", "Serial", "Python"]}
-      />
-      <Section
         color="#ece4db"
         image={require("../images/react-logo.png")}
+        link="https://github.com/jonaskaz/portfolio"
         title="This website"
         description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects."
         skills={["React", "Javascript", "CSS", "HTML", "Heroku"]}
