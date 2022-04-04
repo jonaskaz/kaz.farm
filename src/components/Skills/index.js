@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
+import { Wrapper, Item } from "./Skills.styles";
 
 const Skills = ({ skills }) => {
   var output = skills.map((skill) => (
-    <div key={skill} className="skill">
+    <Item key={skill}>
       {skill}
-    </div>
+    </Item>
   ));
-  return <div className="flex-container skills">{output}</div>;
+  return <Wrapper>{output}</Wrapper>;
 };
 
 Skills.propTypes = {

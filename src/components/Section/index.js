@@ -1,7 +1,8 @@
-import Header from "./Header";
-import Blurb from "./Blurb";
-import Skills from "./Skills";
+import Header from "../Header";
+import Blurb from "../Blurb";
+import Skills from "../Skills";
 import { AiOutlineLink } from "react-icons/ai";
+import { Wrapper, FlexCont, Outlink } from "./Section.styles";
 
 const Section = ({
   color,
@@ -13,17 +14,16 @@ const Section = ({
   skills,
 }) => {
   return (
-    <div style={{ backgroundColor: color }} className="section">
-      <div className="flex-container">
+    <Wrapper style={{ backgroundColor: color }}>
+      <FlexCont>
         {headerText && <Header text={headerText} />}
         <Blurb title={title} image={image} text={description} />
-      </div>
+      </FlexCont>
       <Skills skills={skills} />
-      <div className="outlink-buffer"></div>
-      <a style={{ padding: "20px" }} href={link}>
+      <Outlink href={link}>
         <AiOutlineLink color="black" size={20} />
-      </a>
-    </div>
+      </Outlink>
+    </Wrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 import Section from "../components/Section";
 import Intro from "../components/Intro";
-import StickyMenu from "../components/StickyMenu";
+import StickyMenu from "../components/Menu";
 
 function Home() {
   return (
