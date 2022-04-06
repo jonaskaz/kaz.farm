@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./webpages/Home";
 import Gallery from "./webpages/Gallery";
 import Resume from "./webpages/Resume";
+import Upload from "./webpages/Upload";
 
 ReactDOM.render(
   <Router>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/resume" element={<Resume />} />
+      <Route path="/upload" element={<Upload />} />
     </Routes>
   </Router>,
 

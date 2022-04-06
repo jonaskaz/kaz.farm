@@ -5,7 +5,7 @@ const Blurb = ({ title, text, image }) => {
     <Wrapper>
         <Content>
           <h3>{title}</h3>
-          <p>{text}</p>
+          <div>{text}</div>
         </Content>
         {image && <Image alt="project image" src={image}></Image>}
     </Wrapper>
