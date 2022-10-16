@@ -5,7 +5,7 @@ import { useGalleryFetch } from "../hooks/useGalleryFetch";
 
 const Gallery = () => {
   let images = useGalleryFetch();
-  if (images.length == 0) {
+  if (images.length === 0) {
     return <div>No images to display...</div>;
   }
   return (

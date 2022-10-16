@@ -15,6 +15,7 @@ code {
 .App {
   background: #ffffff;
   height: 100vh;
+  margin: auto;
 }
 
 :root {

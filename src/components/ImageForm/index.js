@@ -8,7 +8,7 @@ const ImageForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let res = API.uploadImage(selectedImage.image, title.title, description.description);
+    API.uploadImage(selectedImage.image, title.title, description.description);
   };
 
   const handleImage = (event) => {

@@ -15,8 +15,8 @@ function Home() {
       <StickyMenu
         items={[
           { text: "Home", href: "/" },
-          { text: "Resume", href: "/resume" },
-          { text: "Gallery", href: "/gallery" },
+          { text: "Resume", href: require("../images/JonasResume.pdf") },
+          { text: "Gallery", href: "/gallery"  },
         ]}
       />
       <Section
