@@ -9,6 +9,7 @@ function Home() {
         color="#efc3e6"
         name="Jonas Kazlauskas"
         title="Software Engineer, Student @ Olin College of Engineering"
+        email="jonas.kazlauskas@me.com"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
         github={"https://github.com/jonaskaz"}
       />
@@ -16,7 +17,6 @@ function Home() {
         items={[
           { text: "Home", href: "/" },
           { text: "Resume", href: require("../images/JonasResume.pdf") },
-          { text: "Gallery", href: "/gallery"  },
         ]}
       />
       <Section
@@ -114,6 +114,14 @@ function Home() {
         ]}
       />
       <Section
+        color="#e8dab2"
+        image={require("../images/evo-algo-1.png")}
+        link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
+        title="Python reinforcement Q-learning and evolutionary algorithms"
+        description="In this project, we created two numpy implementations of simple evolutionary algorithms. Next, we implemented Q-learning to solve two of OpenAI's GYM library environments."
+        skills={["Python", "numpy", "matplotlib", "gym"]}
+      />
+       <Section
         color="#e8dab2"
         image={require("../images/evo-algo-1.png")}
         link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
