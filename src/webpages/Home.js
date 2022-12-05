@@ -8,7 +8,8 @@ function Home() {
       <Intro
         color="#efc3e6"
         name="Jonas Kazlauskas"
-        title="Software Engineer, Student @ Olin College of Engineering"
+        title="Climate, AgTech, and Food Focused Software Engineer"
+        school="Computing @ Olin College of Engineering"
         email="jonas.kazlauskas@me.com"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
         github={"https://github.com/jonaskaz"}
@@ -21,16 +22,72 @@ function Home() {
       />
       <Section
         color="#eaeaea"
+        image={require("../images/hydro-system-v2.jpg")}
+        title="Hydroponics Automation Architecture Re-Design"
+        link="https://github.com/jonaskaz/lsd-portfolio/blob/main/quality.md"
+        description={
+          <div>
+            Fully re-designed the automation architecture for Olin's Hydroponics club.
+            The new system was designed for scale, maintainability, transparency and robustness.
+          </div>
+        }
+        skills={["Databases", "Deployment", "Design", "Systems Thinking"]}
+      />
+      <Section
+        color="#ece4db"
+        image={require("../images/golang.png")}
+        title="Automation Scheduler and Controller (Mother Nature)"
+        link="https://github.com/Olin-Hydro/mother-nature"
+        description={
+          <div>
+            Created a high level controller in Go for Hydro's newest automation system. 
+            Mother Nature is complete with mocks for testing and continuous integration via 
+            github workflows. This project is still under development.
+          </div>
+        }
+        skills={["Golang", "Continuous Integration", "Github Workflows", "Unit Testing"]}
+      />
+      <Section
+        color="#e8dab2"
+        image={require("../images/plant-vision.png")}
+        title="Plant Image Detection and Measurement"
+        link="https://github.com/jonaskaz/plant-vision"
+        description={
+          <div>
+            Plant detection and measurement in images using Python, OpenCV, and PlantCV. We 
+            used filtering and binary thresholding to identify the plants, scaled 
+            their size to a known size on the image, and tracked their growth over time.
+          </div>
+        }
+        skills={["Python", "OpenCV", "PlantCV", "Matplotlib"]}
+      />
+      <Section
+        color="#fafafa"
+        image={require("../images/storage-api-deployment.jpg")}
+        title="Image Storage API Deployed With Docker and Ansible"
+        link="https://github.com/jonaskaz/plant-analysis/tree/main/storage_api"
+        description={
+          <div>
+            Created a basic FastAPI app that stores images locally and makes them available 
+            via GET request by timestamp. This API was Dockerized and can be deployed on any 
+            remote server by running an ansible playbook. The API was used to take pictures 
+            of seedlings as they grow for computer vision experiments.
+          </div>
+        }
+        skills={["Python", "Docker", "FastAPI", "Ansible"]}
+      />
+      <Section
+        color="#eaeaea"
         image={require("../images/taproot.png")}
         title="Javascript GraphQL Hydroponics Data API"
         link="https://github.com/Olin-Hydro/taproot"
         description={
           <div>
-            Designed and deployed a NodeJS GraphQL Data API on AWS to serve and
-            store all our tasks logs, sensor readings, and system parameters.
+            Designed and deployed a NodeJS GraphQL Data API on AWS with docker-compose to 
+            serve and store all our tasks logs, sensor readings, and system parameters.
           </div>
         }
-        skills={["Javascript", "Node", "AWS", "GraphQL", "MySQL"]}
+        skills={["Javascript", "Node", "AWS", "GraphQL", "MySQL", "Docker"]}
       />
       <Section
         color="#fafafa"
@@ -112,14 +169,6 @@ function Home() {
           "AccelStepper",
           "ArduinoJson",
         ]}
-      />
-      <Section
-        color="#e8dab2"
-        image={require("../images/evo-algo-1.png")}
-        link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
-        title="Python reinforcement Q-learning and evolutionary algorithms"
-        description="In this project, we created two numpy implementations of simple evolutionary algorithms. Next, we implemented Q-learning to solve two of OpenAI's GYM library environments."
-        skills={["Python", "numpy", "matplotlib", "gym"]}
       />
        <Section
         color="#e8dab2"
