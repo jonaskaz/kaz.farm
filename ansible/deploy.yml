@@ -1,5 +1,5 @@
 ---
-- name: Deploy storage api
+- name: Deploy kaz.farm
   hosts: webservers
   remote_user: root
 
