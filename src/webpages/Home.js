@@ -48,20 +48,6 @@ function Home() {
         skills={["Golang", "Continuous Integration", "Github Workflows", "Unit Testing"]}
       />
       <Section
-        color="#e8dab2"
-        image={require("../images/plant-vision.png")}
-        title="Plant Image Detection and Measurement"
-        link="https://github.com/jonaskaz/plant-vision"
-        description={
-          <div>
-            Plant detection and measurement in images using Python, OpenCV, and PlantCV. We 
-            used filtering and binary thresholding to identify the plants, scaled 
-            their size to a known size on the image, and tracked their growth over time.
-          </div>
-        }
-        skills={["Python", "OpenCV", "PlantCV", "Matplotlib"]}
-      />
-      <Section
         color="#fafafa"
         image={require("../images/storage-api-deployment.jpg")}
         title="Image Storage API Deployed With Docker and Ansible"
@@ -75,6 +61,20 @@ function Home() {
           </div>
         }
         skills={["Python", "Docker", "FastAPI", "Ansible"]}
+      />
+      <Section
+        color="#e8dab2"
+        image={require("../images/plant-vision.png")}
+        title="Plant Image Detection and Measurement"
+        link="https://github.com/jonaskaz/plant-vision"
+        description={
+          <div>
+            Plant detection and measurement in images using Python, OpenCV, and PlantCV. We 
+            used filtering and binary thresholding to identify the plants, scaled 
+            their size to a known size on the image, and tracked their growth over time.
+          </div>
+        }
+        skills={["Python", "OpenCV", "PlantCV", "Matplotlib"]}
       />
       <Section
         color="#eaeaea"
