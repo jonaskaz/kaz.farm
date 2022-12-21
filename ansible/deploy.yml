@@ -1,5 +1,5 @@
 ---
-- name: Deploy kaz.farm
+- name: Deploy jonas.kaz.farm
   hosts: webservers
   remote_user: root
 
@@ -43,7 +43,7 @@
       state: started
   - name: Run docker container
     docker_container:
-      name: portfolio-website
+      name: jonas.kaz.farm
       image: jonaskaz/jonas.kaz.farm
       pull: yes
       state: started
