@@ -10,7 +10,7 @@ function Home() {
         name="Jonas Kazlauskas"
         title="Climate, AgTech, and Food Focused Software Engineer"
         school="Computing @ Olin College of Engineering"
-        email="jonas.kazlauskas@me.com"
+        email="jonas@kaz.farm"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
         github={"https://github.com/jonaskaz"}
       />
