@@ -27,8 +27,9 @@ function Home() {
         link="https://github.com/jonaskaz/lsd-portfolio/blob/main/quality.md"
         description={
           <div>
-            Fully re-designed the automation architecture for Olin's Hydroponics club.
-            The new system was designed for scale, maintainability, transparency and robustness.
+            Fully re-designed the automation architecture for Olin's Hydroponics
+            club. The new system was designed for scale, maintainability,
+            transparency and robustness.
           </div>
         }
         skills={["Databases", "Deployment", "Design", "Systems Thinking"]}
@@ -40,12 +41,18 @@ function Home() {
         link="https://github.com/Olin-Hydro/mother-nature"
         description={
           <div>
-            Created a high level controller in Go for Hydro's newest automation system. 
-            Mother Nature is complete with mocks for testing and continuous integration via 
-            github workflows. This project is still under development.
+            Created a high level controller in Go for Hydro's newest automation
+            system. Mother Nature is complete with mocks for testing and
+            continuous integration via github workflows. This project is still
+            under development.
           </div>
         }
-        skills={["Golang", "Continuous Integration", "Github Workflows", "Unit Testing"]}
+        skills={[
+          "Golang",
+          "Continuous Integration",
+          "Github Workflows",
+          "Unit Testing",
+        ]}
       />
       <Section
         color="#fafafa"
@@ -54,10 +61,11 @@ function Home() {
         link="https://github.com/jonaskaz/plant-analysis/tree/main/storage_api"
         description={
           <div>
-            Created a basic FastAPI app that stores images locally and makes them available 
-            via GET request by timestamp. This API was Dockerized and can be deployed on any 
-            remote server by running an ansible playbook. The API was used to take pictures 
-            of seedlings as they grow for computer vision experiments.
+            Created a basic FastAPI app that stores images locally and makes
+            them available via GET request by timestamp. This API was Dockerized
+            and can be deployed on any remote server by running an ansible
+            playbook. The API was used to take pictures of seedlings as they
+            grow for computer vision experiments.
           </div>
         }
         skills={["Python", "Docker", "FastAPI", "Ansible"]}
@@ -69,9 +77,10 @@ function Home() {
         link="https://github.com/jonaskaz/plant-vision"
         description={
           <div>
-            Plant detection and measurement in images using Python, OpenCV, and PlantCV. We 
-            used filtering and binary thresholding to identify the plants, scaled 
-            their size to a known size on the image, and tracked their growth over time.
+            Plant detection and measurement in images using Python, OpenCV, and
+            PlantCV. We used filtering and binary thresholding to identify the
+            plants, scaled their size to a known size on the image, and tracked
+            their growth over time.
           </div>
         }
         skills={["Python", "OpenCV", "PlantCV", "Matplotlib"]}
@@ -83,8 +92,9 @@ function Home() {
         link="https://github.com/Olin-Hydro/taproot"
         description={
           <div>
-            Designed and deployed a NodeJS GraphQL Data API on AWS with docker-compose to 
-            serve and store all our tasks logs, sensor readings, and system parameters.
+            Designed and deployed a NodeJS GraphQL Data API on AWS with
+            docker-compose to serve and store all our tasks logs, sensor
+            readings, and system parameters.
           </div>
         }
         skills={["Javascript", "Node", "AWS", "GraphQL", "MySQL", "Docker"]}
@@ -94,10 +104,10 @@ function Home() {
         image={require("../images/hydro-harvest-1.jpg")}
         title="Hydroponics automation controller"
         link="https://github.com/Olin-Hydro/circadia"
-        description='Built an arduino program using C++ and PlatformIO to take sensor
+        description="Built an arduino program using C++ and PlatformIO to take sensor
          readings and schedule dispensing nutrients. Data is sent to a raspberry pi 
          via serial which handles making calls to our API. Pictured on the right is
-         a head of lettuce harvested from our garden.'
+         a head of lettuce harvested from our garden."
         skills={["C++", "Arduino", "Serial", "PlatformIO", "OOP"]}
       />
       <Section
@@ -118,8 +128,9 @@ function Home() {
         description={
           <div>
             Designed and deployed a Python REST Data API on AWS to serve all our
-            logs, sensor readings and smart contract data. This was our version 1
-            API that was eventually replaced with our current GraphQL implementation.
+            logs, sensor readings and smart contract data. This was our version
+            1 API that was eventually replaced with our current GraphQL
+            implementation.
           </div>
         }
         skills={["Python", "flask", "AWS", "web3", "flask-restx", "SQLalchemy"]}
@@ -170,7 +181,7 @@ function Home() {
           "ArduinoJson",
         ]}
       />
-       <Section
+      <Section
         color="#e8dab2"
         image={require("../images/evo-algo-1.png")}
         link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
