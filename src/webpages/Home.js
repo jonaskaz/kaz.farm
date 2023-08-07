@@ -8,7 +8,7 @@ function Home() {
       <Intro
         color="#efc3e6"
         name="Jonas Kazlauskas"
-        title="Climate, AgTech, and Food Focused Software Engineer"
+        title="Mission Driven Software Engineer"
         school="Computing @ Olin College of Engineering"
         email="jonas@kaz.farm"
         linkedin={"https://www.linkedin.com/in/jonas-kazlauskas-bb19a217b/"}
@@ -22,6 +22,28 @@ function Home() {
       />
       <Section
         color="#fafafa"
+        image={require("../images/lighting-box.png")}
+        title="Controlled Lighting for the Keweenaw Bay Tribal Fish Hatchery"
+        link="https://github.com/jonaskaz/project-brood-stock"
+        description={
+          <div>
+            NSF funded self-directed summer research project at Michigan
+            Technological Institute in collaboration with the Keweenaw Bay
+            Indian Community (KBIC). Designed, built, and installed an automated
+            lighting system that allowed for both user control and automation to
+            mimic sunrise and sunset through lighting inside the KBIC fish
+            hatchery.
+          </div>
+        }
+        skills={[
+          "User-Oriented Design",
+          "C++",
+          "Project Management",
+          "Electrical Engineering",
+        ]}
+      />
+      <Section
+        color="#e8dab2"
         image={require("../images/mural.png")}
         title="We are Waltham: Welcome Home (CDCW Mural Project)"
         link="https://devpost.com/software/we-are-waltham-welcome-home-cdcw-mural-project"
