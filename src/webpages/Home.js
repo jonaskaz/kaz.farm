@@ -21,6 +21,30 @@ function Home() {
         ]}
       />
       <Section
+        color="#fafafa"
+        image={require("../images/mural.png")}
+        title="We are Waltham: Welcome Home (CDCW Mural Project)"
+        link="https://devpost.com/software/we-are-waltham-welcome-home-cdcw-mural-project"
+        description={
+          <div>
+            Winner of the 2023 DeisHack Hackathon for social good: Best
+            Non-technical Solution. We created a novel solution for the
+            Community Day Center of Waltham (CDCW), a center that provides
+            assistance and housing to the unhoused population of Waltham. Our
+            solution is a mural program that would employ and humanize the
+            clients of the CDCW while simultaneously challenging the dominant
+            negative perceptions of unhoused people.
+          </div>
+        }
+        skills={[
+          "User-Oriented Design",
+          "UI/UX",
+          "Figma",
+          "Project Management",
+          "Video Editing",
+        ]}
+      />
+      <Section
         color="#eaeaea"
         image={require("../images/hydro-system-v2.jpg")}
         title="Hydroponics Automation Architecture Re-Design"
