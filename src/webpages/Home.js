@@ -1,6 +1,6 @@
-import Section from "../components/Section";
-import Intro from "../components/Intro";
-import StickyMenu from "../components/Menu";
+import Section from "../components/Portfolio/Section";
+import Intro from "../components/Portfolio/Intro";
+import StickyMenu from "../components/Portfolio/Menu";
 
 function Home() {
   return (
@@ -17,12 +17,15 @@ function Home() {
       <StickyMenu
         items={[
           { text: "Home", href: "/" },
-          { text: "Resume", href: require("../images/JonasResume.pdf") },
+          {
+            text: "Resume",
+            href: require("../images/portfolio/JonasResume.pdf"),
+          },
         ]}
       />
       <Section
         color="#fafafa"
-        image={require("../images/lighting-box.png")}
+        image={require("../images/portfolio/lighting-box.png")}
         title="Controlled Lighting for the Keweenaw Bay Tribal Fish Hatchery"
         link="https://github.com/jonaskaz/project-brood-stock"
         description={
@@ -44,7 +47,7 @@ function Home() {
       />
       <Section
         color="#e8dab2"
-        image={require("../images/mural.png")}
+        image={require("../images/portfolio/mural.png")}
         title="We are Waltham: Welcome Home (CDCW Mural Project)"
         link="https://devpost.com/software/we-are-waltham-welcome-home-cdcw-mural-project"
         description={
@@ -68,7 +71,7 @@ function Home() {
       />
       <Section
         color="#eaeaea"
-        image={require("../images/hydro-system-v2.jpg")}
+        image={require("../images/portfolio/hydro-system-v2.jpg")}
         title="Hydroponics Automation Architecture Re-Design"
         link="https://github.com/jonaskaz/lsd-portfolio/blob/main/quality.md"
         description={
@@ -82,7 +85,7 @@ function Home() {
       />
       <Section
         color="#ece4db"
-        image={require("../images/golang.png")}
+        image={require("../images/portfolio/golang.png")}
         title="Automation Scheduler and Controller (Mother Nature)"
         link="https://github.com/Olin-Hydro/mother-nature"
         description={
@@ -102,7 +105,7 @@ function Home() {
       />
       <Section
         color="#fafafa"
-        image={require("../images/storage-api-deployment.jpg")}
+        image={require("../images/portfolio/storage-api-deployment.jpg")}
         title="Image Storage API Deployed With Docker and Ansible"
         link="https://github.com/jonaskaz/plant-analysis/tree/main/storage_api"
         description={
@@ -118,7 +121,7 @@ function Home() {
       />
       <Section
         color="#e8dab2"
-        image={require("../images/plant-vision.png")}
+        image={require("../images/portfolio/plant-vision.png")}
         title="Plant Image Detection and Measurement"
         link="https://github.com/jonaskaz/plant-vision"
         description={
@@ -133,7 +136,7 @@ function Home() {
       />
       <Section
         color="#eaeaea"
-        image={require("../images/taproot.png")}
+        image={require("../images/portfolio/taproot.png")}
         title="Javascript GraphQL Hydroponics Data API"
         link="https://github.com/Olin-Hydro/taproot"
         description={
@@ -147,7 +150,7 @@ function Home() {
       />
       <Section
         color="#fafafa"
-        image={require("../images/hydro-harvest-1.jpg")}
+        image={require("../images/portfolio/hydro-harvest-1.jpg")}
         title="Hydroponics automation controller"
         link="https://github.com/Olin-Hydro/circadia"
         description="Built an arduino program using C++ and PlatformIO to take sensor
@@ -158,7 +161,7 @@ function Home() {
       />
       <Section
         color="#e8dab2"
-        image={require("../images/hydro-system.jpg")}
+        image={require("../images/portfolio/hydro-system.jpg")}
         title="Raspberry Pi Python API Request Translator"
         link="https://github.com/Olin-Hydro/xylem"
         description="Created a translator to read serial data from Circadia and 
@@ -168,7 +171,7 @@ function Home() {
       />
       <Section
         color="#fafafa"
-        image={require("../images/hydro-api.png")}
+        image={require("../images/portfolio/hydro-api.png")}
         title="Python Flask RESTx data API"
         link="https://github.com/Olin-Hydro/hydro-api"
         description={
@@ -183,7 +186,7 @@ function Home() {
       />
       <Section
         color="#eaeaea"
-        image={require("../images/hydro-web3.png")}
+        image={require("../images/portfolio/hydro-web3.png")}
         title="Blockchain based community garden control"
         link="https://github.com/Olin-Hydro/mycelium"
         description={
@@ -196,7 +199,7 @@ function Home() {
       />
       <Section
         color="#fafafa"
-        image={require("../images/cup-noodle-system.png")}
+        image={require("../images/portfolio/cup-noodle-system.png")}
         title="Fullstack cup noodle vending machine"
         link="https://olincollege.github.io/pie-2021-03/Cup-Noodle/firmware.html"
         description={
@@ -229,7 +232,7 @@ function Home() {
       />
       <Section
         color="#e8dab2"
-        image={require("../images/evo-algo-1.png")}
+        image={require("../images/portfolio/evo-algo-1.png")}
         link="https://nova-crush-0ee.notion.site/Evolutionary-Algorithms-and-Q-learning-49e2efc0439849fbb78e55b9c7737987"
         title="Python reinforcement Q-learning and evolutionary algorithms"
         description="In this project, we created two numpy implementations of simple evolutionary algorithms. Next, we implemented Q-learning to solve two of OpenAI's GYM library environments."
@@ -237,7 +240,7 @@ function Home() {
       />
       <Section
         color="#ece4db"
-        image={require("../images/react-logo.png")}
+        image={require("../images/portfolio/react-logo.png")}
         link="https://github.com/jonaskaz/portfolio"
         title="This website"
         description="This website is written using React, html, CSS. Each project section is a component which allows for easy addition of new projects."
