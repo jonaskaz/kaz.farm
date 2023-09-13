@@ -15,7 +15,13 @@ code {
     monospace;
 }
 
-.App {
+.HomeApp {
+  font-family: Frank Ruhl Libre;
+  background: #ffffff;
+  height: 100vh;  
+}
+
+.EngineeringApp {
   font-family: Rajdhani, "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   background: #ffffff;
@@ -23,7 +29,7 @@ code {
 }
 
 .GownApp {
-  font-family: "Times New Roman", "Cantarell";
+  font-family: Frank Ruhl Libre;
 }
 
 .WritingApp {

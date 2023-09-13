@@ -13,7 +13,7 @@ function Writing() {
 
   return (
     <div className="WritingApp">
-      <Blog text={textContent} title={"Theory of Social Change?"} />
+      <Blog text={textContent} title={"Downloading my thoughts"} />
     </div>
   );
 }
