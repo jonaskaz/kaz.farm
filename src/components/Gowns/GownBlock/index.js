@@ -1,19 +1,19 @@
-import { Wrapper, Content, Image } from "./GownBlock.styles";
+import { Wrapper, Content, Image, ResponsiveP } from "./GownBlock.styles";
 
-const GownBlock = ({ text, image, imageLeft, textSize }) => {
+const GownBlock = ({ text, image, imageLeft }) => {
   return (
     <Wrapper>
       {imageLeft ? (
         <>
           {image && <Image alt="gown image" src={image}></Image>}
           <Content>
-            <p style={{ fontSize: textSize }}>{text}</p>
+            <ResponsiveP>{text}</ResponsiveP>
           </Content>
         </>
       ) : (
         <>
           <Content>
-            <p style={{ fontSize: textSize }}>{text}</p>
+            <ResponsiveP>{text}</ResponsiveP>
           </Content>
           {image && <Image alt="gown image" src={image}></Image>}
         </>

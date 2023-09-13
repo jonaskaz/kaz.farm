@@ -8,13 +8,13 @@ https://kaz.farm/.
 Build the docker container:
 
 ```
-docker build -t jonaskaz/kaz.farm .
+docker build -t jonaskaz/jonas.kaz.farm .
 ```
 
 Push the docker image with the tag latest:
 
 ```
-docker push jonaskaz/kaz.farm:latest
+docker push jonaskaz/jonas.kaz.farm:latest
 ```
 
 Ping the ansible hosts:
