@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Gaegu&display=swap");
 body {
   margin: 0;
   font-family: Rajdhani, "Cantarell", "Fira Sans", "Droid Sans",
@@ -23,6 +24,10 @@ code {
 
 .GownApp {
   font-family: "Times New Roman", "Cantarell";
+}
+
+.WritingApp {
+  font-family: Frank Ruhl Libre;
 }
 
 :root {
