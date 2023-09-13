@@ -10,7 +10,7 @@ function Gown() {
         image={require("../images/gowns/IMG_6639.JPEG")}
       ></GownBlock>
       <GownBlock
-        text="a long loose flowing garment"
+        text="flow and glow"
         textSize="30px"
         imageLeft={false}
         image={require("../images/gowns/IMG_6854.JPEG")}
