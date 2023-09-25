@@ -5,7 +5,7 @@ const Landing = ({ image }) => {
     <Wrapper>
       <div>
         <Link href="/engineering">engineering</Link>
-        <Link href="/writing">writing</Link>
+        <Link href="/writing/1">writing</Link>
         <Link href="/gown">gowns</Link>
       </div>
       <Image src={image}></Image>

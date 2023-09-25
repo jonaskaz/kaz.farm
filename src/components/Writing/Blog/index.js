@@ -5,7 +5,6 @@ const Blog = ({ title, text }) => {
     <Wrapper>
       <Title>{title}</Title>
       <Text>{text}</Text>
-      <p>Please write me with your thoughts and ideas: jonas@kaz.farm</p>
     </Wrapper>
   );
 };
