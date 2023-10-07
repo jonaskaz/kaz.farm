@@ -1,9 +1,12 @@
-import { Wrapper, Text, Title } from "./Blog.styles";
+import { Wrapper, Text, Title, Date, HeaderWrapper } from "./Blog.styles";
 
-const Blog = ({ title, text }) => {
+const Blog = ({ title, text, date }) => {
   return (
     <Wrapper>
-      <Title>{title}</Title>
+      <HeaderWrapper>
+        <Title>{title}</Title>
+        <Date>{date}</Date>
+      </HeaderWrapper>
       <Text>{text}</Text>
     </Wrapper>
   );

@@ -34,11 +34,16 @@ function Writing() {
     "My Theory of Social Change",
     "Love and attachment, 10 people in Ecuador",
   ];
+  const dates = ["September 13, 2023", "September 25, 2023"];
   let nextPage = "/writing/" + (Number(blogNum) + 1);
   let prevPage = "/writing/" + (Number(blogNum) - 1);
   return (
     <div className="WritingApp">
-      <Blog text={textContent} title={titles[blogNum - 1]} />
+      <Blog
+        text={textContent}
+        title={titles[blogNum - 1]}
+        date={dates[blogNum - 1]}
+      />
       <Wrapper>
         {blogNum > 1 && (
           <PageNavigationButton to={prevPage}>Previous</PageNavigationButton>
