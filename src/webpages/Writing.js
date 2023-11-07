@@ -18,12 +18,10 @@ const Wrapper = styled.div`
 function Writing() {
   const [textContent, setTextContent] = useState("");
   const { num } = useParams();
-  console.log(num);
   let blogNum = num;
   if (blogNum === undefined) {
     blogNum = 1;
   }
-  console.log(blogNum);
   useEffect(() => {
     fetch("/text/writing/blog" + blogNum + ".txt")
       .then((response) => response.text())
@@ -33,8 +31,13 @@ function Writing() {
   const titles = [
     "My Theory of Social Change",
     "Love and attachment, 10 people in Ecuador",
+    "Reversing Discourse: A Reflection on Gender in Malawi",
   ];
-  const dates = ["September 13, 2023", "September 25, 2023"];
+  const dates = [
+    "September 13, 2023",
+    "September 25, 2023",
+    "November 7, 2023",
+  ];
   let nextPage = "/writing/" + (Number(blogNum) + 1);
   let prevPage = "/writing/" + (Number(blogNum) - 1);
   return (
@@ -48,7 +51,7 @@ function Writing() {
         {blogNum > 1 && (
           <PageNavigationButton to={prevPage}>Previous</PageNavigationButton>
         )}
-        {blogNum < 2 && (
+        {blogNum < 3 && (
           <PageNavigationButton to={nextPage}>Next</PageNavigationButton>
         )}
       </Wrapper>
