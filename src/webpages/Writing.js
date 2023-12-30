@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 function Writing() {
   const [textContent, setTextContent] = useState("");
   const { num } = useParams();
-  const MAXBLOGS = 4;
+  const MAXBLOGS = 5;
   let blogNum = num;
   if (blogNum === undefined) {
     blogNum = 1;
@@ -34,12 +34,14 @@ function Writing() {
     "Love and attachment, 10 people in Ecuador",
     "Reversing Discourse: A Reflection on Gender in Malawi",
     "Undeliverance",
+    "Placing Myself",
   ];
   const dates = [
     "September 13, 2023",
     "September 25, 2023",
     "November 7, 2023",
     "November 14, 2023",
+    "December 29, 2023",
   ];
   let nextPage = "/writing/" + (Number(blogNum) + 1);
   let prevPage = "/writing/" + (Number(blogNum) - 1);
