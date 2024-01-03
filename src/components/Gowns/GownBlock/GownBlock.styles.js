@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 15px;
   @media (min-width: 768px) {
     /* Adjust font size for screens with a width of 768px or larger (computer) */
     padding: 25px 50px;
@@ -22,7 +22,7 @@ export const Content = styled.div`
 `;
 
 export const ResponsiveP = styled.p`
-  font-size: 14px; /* Default font size for smaller screens (mobile) */
+  font-size: 20px; /* Default font size for smaller screens (mobile) */
 
   @media (min-width: 768px) {
     /* Adjust font size for screens with a width of 768px or larger (computer) */
