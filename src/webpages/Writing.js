@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 function Writing() {
   const [textContent, setTextContent] = useState("");
   const { num } = useParams();
-  const MAXBLOGS = 5;
+  const MAXBLOGS = 6;
   let blogNum = num;
   if (blogNum === undefined) {
     blogNum = 1;
@@ -35,6 +35,7 @@ function Writing() {
     "Reversing Discourse: A Reflection on Gender in Malawi",
     "Undeliverance",
     "Placing Myself",
+    "Surprise christmas with your ex",
   ];
   const dates = [
     "September 13, 2023",
@@ -42,6 +43,7 @@ function Writing() {
     "November 7, 2023",
     "November 14, 2023",
     "December 29, 2023",
+    "April 1, 2024",
   ];
   let nextPage = "/writing/" + (Number(blogNum) + 1);
   let prevPage = "/writing/" + (Number(blogNum) - 1);
